@@ -1,6 +1,6 @@
 export default {
-    name: 'superheroes',
-    title: 'Superheroes',
+    name: 'superhero',
+    title: 'Superhero',
     type: 'document',
     fields: [
         {
@@ -173,14 +173,23 @@ export default {
                     type: 'object',
                     fields: [
                         {
+                            name: 'confirmation',
+                            title: 'Does this hero work',
+                            type: 'boolean',
+                        },                        
+                        {
                             name: 'occupation',
                             title: 'Occupation',
                             type: 'string',
+                            hidden: ({ parent, value }) =>
+                                !value && !parent?.confirmation,
                         },
                         {
                             name: 'base',
                             title: 'Location',
                             type: 'string',
+                            hidden: ({ parent, value }) =>
+                                !value && !parent?.confirmation,
                         },
                     ],
                 },
