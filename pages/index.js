@@ -1,8 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-page-custom-font */
 import Head from 'next/head'
-import Link from 'next/link'
 import groq from 'groq'
 import client from '../lib/client';
-import Image from 'next/image';
+// import Image from 'next/image';
 import imageUrlBuilder from '@sanity/image-url'
 
 const builder = imageUrlBuilder(client)
@@ -33,9 +34,9 @@ const Index = ({ posts }) => {
               <img
                 src={urlFor(post.image)}
                 alt={post.name}
-                width={490}
-                height={400}
-                className="object-cover w-auto h-auto peer"
+                // width={490}
+                // height={400}
+                className="object-cover w-auto h-auto peer w-[490px] h-[400px]"
               />
               <div className="group-hover:px-4 group-hover:py-4 flex flex-col w-[0px] h-[0px] group-hover:w-[max-content] group-hover:h-[max-content]" style={{
                 transition: "all .5s ease-in-out"
