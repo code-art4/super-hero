@@ -19,6 +19,8 @@ export default {
                 source: 'name',
                 maxLength: 20,
             },
+            validation: (Rule) =>
+                Rule.required()
         },           
         {
             name: 'image',
@@ -27,6 +29,8 @@ export default {
             options: {
                 hotspot: true,
             },
+            validation: (Rule) =>
+                Rule.required()
         },       
         {
             name: 'appearance',
@@ -67,6 +71,7 @@ export default {
                             'yellow',
                             'orange',
                             'black',
+                            'brown',
                             'green',
                             'white',
                             'indigo',
@@ -83,6 +88,7 @@ export default {
                             'red',
                             'blue',
                             'blonde',
+                            'brown',
                             'orange',
                             'black',
                             'green',
