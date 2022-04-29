@@ -15,7 +15,7 @@ This dependencies were done with yarn
 yarn dev
 ```
 
-Open http://localhost:3000 with your browser to see the result.
+Open localhost:3000 with your browser to see the result.
 
 and run the sanity server
 
@@ -23,4 +23,4 @@ and run the sanity server
 sanity start
 ```
 
-Open http://localhost:3333 with your browser to see the result.
+Open localhost:3333 with your browser to see the result.
